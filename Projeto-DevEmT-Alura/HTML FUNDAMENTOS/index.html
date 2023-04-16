@@ -1,0 +1,97 @@
+<!-- tags são necessárias para um HTML básico -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML - Fundamentos</title>
+</head>
+
+<body>
+
+    <!--Diferença entre h1, h2, h3 (tamanho)-->
+    <h1>Fundamentos basicos em HTML</h1>
+    <!--Criar paragrafo em texto-->
+    <p>HTML é uma linguagem de marcação que define a estrutura do seu conteúdo. HTML consiste em uma série de elementos
+        que você usa para mostrar algo de uma determinada maneira ou agir de uma certo modo. As tags podem criar um
+        hiperlink de uma palavra ou imagem para outro lugar, podem colocar palavras em itálico, podem aumentar ou
+        diminuir a fonte e assim por diante.</p>
+
+    <!--Adicionando imagens-->
+    <div class="imagem">
+        <img class="estudantes" src="imgs/estudantes.jpg" alt="Imagem">
+    </div>
+    <!-- texto com hyperlink -->
+
+    <p> Link para acesso a essas referencias <a href="https://techguide.sh/pt-BR/path/front-end/"> clique aqui</a></p>
+
+    <form action="formulario" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Nome" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="E-mail" id="email" name="email" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Lista ordenada:</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Lista não ordenada:</h2>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2> Lista de itens dentro de uma lista suspensa (dropdown list) </h2>
+
+    <select>
+        <option value="item1">Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+    </select>
+
+    <h2>Listas suspensas com subitens</h2>
+
+    <select>
+        <option value="item1">Item 1</option>
+        <optgroup label="Subitens do Item 1">
+            <option value="subitem1">Subitem 1</option>
+            <option value="subitem2">Subitem 2</option>
+        </optgroup>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+    </select>
+
+    <h2>Criando tabelas</h2>
+
+    <table>
+        <tr>
+            <th>Nome:</th>
+            <th>Email:</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>maria@teste.com.br</td>
+        </tr>
+        <tr>
+            <td>Henrique</td>
+            <td>henrique@teste.com.br</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

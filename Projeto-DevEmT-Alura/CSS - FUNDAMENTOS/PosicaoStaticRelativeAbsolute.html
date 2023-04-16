@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de Página HTML com CSS</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+		}
+		
+		.container {
+			width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			position: relative;
+		}
+		
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+			position: absolute;
+		}
+		
+		.box-1 {
+			top: 20px;
+			left: 20px;
+		}
+		
+		.box-2 {
+			bottom: 20px;
+			right: 20px;
+		}
+		
+		.box-3 {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box box-1">Box 1</div>
+		<div class="box box-2">Box 2</div>
+		<div class="box box-3">Box 3</div>
+	</div>
+</body>
+</html>

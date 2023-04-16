@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(243, 193, 193);
+}
+
+h1{
+    text-align: center;
+}
+
+
+.estudantes{
+    width: 50%;
+    height: 100%;
+}
+
+.imagem{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse; /* remove as bordas entre as células */
+    width: 100%; /* define a largura da tabela */
+  }
+  
+  th, td {
+    border: 1px solid black; /* define uma borda de 1px preta para as células */
+    padding: 8px; /* define o preenchimento interno das células */
+    text-align: left; /* alinha o texto das células à esquerda */
+  }
+  
+  th {
+    background-color: #dddddd; /* define uma cor de fundo cinza para as células de cabeçalho */
+  }
+  

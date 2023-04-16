@@ -1,0 +1,89 @@
+/* Este trecho de estilo se refere à página sobre nós do blog */
+.about {
+    @include for-phone-only {   
+        width: 90%;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 40px;
+    width: 80%;
+ 
+    &__title {
+        background-color: $light-gray;
+        padding: 20px;
+        text-align: center;
+    }
+ 
+    &__h1 {
+        @extend %half-margin-top, %default-margin-bottom, %no-margin-left, %no-margin-right;
+        @include fontSize(22px);
+        color: $dark-gray;
+        letter-spacing: 1px;
+   }
+ 
+    .breadcrumb {
+        @include flx(justify-content, center);
+        align-items: center;
+
+        &__link {
+            @include fontSize(12px);
+            color: $dark-gray;
+            text-decoration: none;
+            &:hover {
+                color: $purple;
+                text-decoration: underline;
+            }
+        }
+ 
+        &__img {
+            margin: 8px;
+            width: 10px;
+        }
+    }
+ 
+    &__img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+ 
+    &__intro {
+        @include fontSize(16px);
+        @include for-phone-only {   
+            width: 90%;
+        }
+        @include for-tablet-only {   
+            width: 80%;
+        }
+        color: $dark-gray;
+        font-weight: 100;
+        margin: 30px auto;
+        text-align: center;
+        width: 70%;
+    }
+ 
+    &__split {
+        @include flx(justify-content, center);
+        align-items: center;
+        flex-wrap: wrap;
+    }
+ 
+    &__img-description {
+        @include for-phone-only {   
+            width: 80%;
+        }
+        width: $img-width;
+    }
+ 
+    &__txt {
+        @include for-phone-only {   
+            width: 90%;
+            text-align: center;
+        }
+        width: calc(100% - #{$img-width});
+    }
+ 
+    &__p {
+        @include fontSize(14px);
+        color: $dark-gray;
+        padding: 10px 20px;
+    }
+}

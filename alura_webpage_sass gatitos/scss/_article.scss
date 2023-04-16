@@ -1,0 +1,72 @@
+.article {
+    @include for-phone-only {   
+        width: 90%;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 40px;
+    width: 80%;
+
+    &__title {
+        background-color: $light-gray;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__h1 {
+        @extend %half-margin-top, %default-margin-bottom, %no-margin-left, %no-margin-right;
+        @include fontSize(22px);
+        color: $dark-gray;
+        letter-spacing: 1px;
+    }
+
+    .breadcrumb {
+        @include flx(justify-content, center);
+        align-items: center;
+
+        &__link {
+            @extend %no-decoration;
+            @include fontSize(12px);
+            color: $dark-gray;
+            &:hover {
+                @extend %u-decoration;
+                color: $purple;
+            }
+        }
+
+        &__img {
+            margin: 8px;
+            width: 10px;
+        }
+    }
+
+    &__img {
+        @extend %double-margin-bottom;
+        width: 100%;
+    }
+
+    &__details {
+        @include flx(justify-content, center);
+        align-items: center;
+    }
+
+    &__date {
+        @extend %no-margin-top, %no-margin-bottom, %default-margin-left, %default-margin-right;
+        @include fontSize(12px);
+        font-style: italic;
+    }
+
+    &__tag {
+        @include fontSize(14px);
+        border: 1px solid $purple;
+        color: $purple;
+        @extend %no-margin-top, %no-margin-bottom, %default-margin-left, %default-margin-right;
+        padding: 5px 7px;
+    }
+
+    &__content {
+        @include fontSize(14px);
+        color: $dark-gray;
+        font-weight: 100;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cronômetro</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		.timer-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		#timer {
+			font-size: 5rem;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+
+		.buttons-container {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		button {
+			font-size: 1.5rem;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			background-color: #7f58af;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #6b4f9f;
+		}
+
+		button:active {
+			background-color: #593f8f;
+		}
+	</style>
+</head>
+<body>
+	<div class="timer-container">
+		<div id="timer">00:00:00</div>
+		<div class="buttons-container">
+			<button id="start">Iniciar</button>
+			<button id="pause" disabled>Pausar</button>
+			<button id="reset" disabled>Resetar</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let timer = document.getElementById('timer');
+		let startBtn = document.getElementById('start');
+		let pauseBtn = document.getElementById('pause');
+		let resetBtn = document.getElementById('reset');
+		let seconds = 0;
+		let minutes = 0;
+		let hours = 0;
+		let interval;
+
+		function startTimer() {
+			interval = setInterval(function() {
+				seconds++;
+				if (seconds === 60) {
+					minutes++;
+					seconds = 0;
+				}
+				if (minutes === 60) {
+					hours++;
+					minutes = 0;
+				}
+				timer.innerHTML = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+			}, 1000);
+		}
+
+		function pauseTimer() {
+			clearInterval(interval);
+			startBtn.disabled = false;
+			pauseBtn.disabled = true;
+			resetBtn.disabled = false;
+		}
+
+		function resetTimer() {
+			clearInterval(interval);
+			seconds = 0;
+			minutes = 0;
+			hours = 0;
+			timer.innerHTML = "00:00:00";
+			startBtn.disabled = false;
+			pauseBtn.disabled = true;
+			resetBtn.disabled = true;
+		}
+
+		startBtn.addEventListener('click', function() {
+			startTimer();
+			startBtn.disabled = true;
+			pauseBtn.disabled = false;
+			resetBtn.disabled = false;
+		});
+
+		pauseBtn.addEventListener('click', function() {
+			pauseTimer();
+		});
+
+		resetBtn.addEventListener('click', function() {
+			resetTimer();
+		});
+	</script>
+</body>
+</html>

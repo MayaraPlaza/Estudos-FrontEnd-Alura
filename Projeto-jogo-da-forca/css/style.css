@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.container {
+    background-image: url("../img/back.svg");    
+    height: 110vh;   
+}
+body {
+    background-color: #dfd6d3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14pt;
+}
+#insere_palavra {
+    text-transform: uppercase;
+    text-align: center;
+    color: #416ac2;
+    font-weight: 700;
+    height: 20px;
+}
+#exibe_palavra {
+    display: flex;
+    justify-content: center;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+#txtErradas {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.alerta {
+    color: red;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.letras_erradas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 5px;
+}
+#chute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+#digita_chute {
+    color: rgb(68, 17, 17);
+    font-weight: 700;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #635d5b;
+    outline: none;
+    width: 70px;
+    height: 33px;
+    font-size: 20pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+#boneco {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+#boneco img {
+    width: 100%;
+}
+#flutua {
+    position:absolute;
+    top: 45%;
+    left: 33%;
+    background-color: #ece7e1;
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+}
+#resultado {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    background-color: #ece7e1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
+}
+#avisos {
+    text-align: center;
+}
+#inserir_palavra {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+#botoes_storage {
+    display: grid;
+}
+#fundo_popup {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeede8;
+    width: 310px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#inputInserir {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.bts {
+    background-color: #416ac2;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.bts:hover {
+    background-color: #4777dd;
+}
+.btsVerde {
+    background-color: #37a02d;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btsVerde:hover {
+    background-color: #4a8f22;
+}
+.btsVermelho {
+    background-color: #c24747;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btsVermelho:hover {
+    background-color: #a53342;
+}
+.bts_novo_jogo {
+    background-color: #416ac2;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+#doisBotoes {
+    position: absolute;
+    display: grid;
+    top: 110%;
+    width: 100%;
+    gap: 20px;
+}
+#bt_fecha {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 15px;
+}
+#fechar {
+    background-color: #a53342;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    color: #fff;
+}
+#fundo_tabela {
+    display:grid;
+    padding: 10px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeede8;
+    width: 300px;
+    height: 370px;
+    border-radius: 10px;
+    gap: 5px;
+}
+#espiar {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+#mostra_secretas {
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: none;
+    color: #a53342;
+    font-size: 11pt;
+    font-weight: bold;
+}
+#meusLinks {
+    position:absolute;
+    justify-content:center;
+    background-color: #567cce;
+    height: 60px;
+    display: flex;
+    width: 200px;
+    right: 1%;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+}
+.bt_links {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+#meusLinks a{
+    margin-top: 5px;
+    width: 25px;
+}
+#topo {
+    background-color: #567cce;
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+#topo2 {
+    font-size: 12pt;
+    position:absolute;
+    background-color: transparent;
+    display: flex;
+    width: 99%;
+    padding-left: 1%;
+    height: 60px;
+    color: #fff;
+    align-items: center;
+    gap: 50px;
+}
+.frases {
+    font-size: 12pt;
+    color: #416ac2;
+    padding: 5px;
+}
+.bts_inserir {
+    background-color: #567cce;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    text-transform: uppercase;
+}
+#alert {
+    color: red;
+    text-transform: uppercase;
+    font-size:11pt;
+    margin-bottom: 10px;
+}

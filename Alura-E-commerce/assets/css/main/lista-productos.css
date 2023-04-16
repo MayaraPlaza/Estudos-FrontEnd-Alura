@@ -1,0 +1,63 @@
+.contenido{
+    background: #f5f5f5;
+}
+.contenido__productos{
+    width: 80%;
+    margin: 0 auto;
+}
+.lista__productos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.lista__item{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lista__titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #464646;
+}
+
+.lista__precio{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+}
+
+.lista__numero{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A7AE4;
+}
+
+.lista__eliminar{
+    width: 20px;
+    height: 20px;
+    background: url("../../img/Otros/bantes.png") no-repeat center / cover;
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0);
+    margin: 10px 5px;
+}
+.lista__eliminar:hover{
+    background: url("../../img/Otros/bdespues.png") no-repeat center / cover;
+}
+.lista__editar {
+    width: 20px;
+    height: 20px;
+    background: url("../../img/Otros/lantes.png") no-repeat center / cover;
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0);
+    margin: 10px 5px;
+}
+.lista__editar:hover{
+    background: url("../../img/Otros/ldespues.png") no-repeat center / cover;
+}

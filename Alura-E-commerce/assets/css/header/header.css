@@ -1,0 +1,132 @@
+
+.cabecera{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    margin: 0 auto;
+}
+.cabecera__inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inicio__logo{
+    width: 200px;
+    height: 50px;
+    background: url("../../img/Logo.png") no-repeat center / cover;
+    margin-right: 30px;
+}
+
+.inicio__buscar{
+    width: 300px;
+    height: 20px;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 20px;
+}
+
+.inicio__buscar__texto{
+    width: 90%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 14px;
+    align-items: center;
+    color: #A2A2A2;
+    border: none;
+    background: #f5f5f5;
+    outline: none;
+}
+
+.inicio__icono{
+    color: #A2A2A2;
+    position: absolute;
+}
+
+.inicio__boton{
+    width: 2%;
+    text-decoration: none;
+    padding-right: 16px;
+    font-size: 22px;
+}
+
+.cabecera__login{
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 16px;
+    width: 182px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4 ;
+    cursor: pointer;
+}
+.cabecera__login:hover{
+    background: #def2f5;
+}
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .inicio__logo {
+        position: relative;
+        width: 100px;
+        height: 25px;
+    }
+
+    .inicio__buscar {
+        color: #FFFFFF;
+        width: 0px;
+        background: #FFFFFF;
+        padding: 0;
+    }
+
+    .inicio__buscar__texto {
+        background: #FFFFFF
+    }
+
+    .inicio__buscar__texto::placeholder {
+        color: #FFFFFF;
+    }
+    .inicio__boton{
+        color: #FFFFFF;
+        width: 0%;
+        cursor: none;
+    }
+    .cabecera__login{
+        position: relative;
+        padding: 10px;
+        width: 112px;
+        height: 41px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .inicio__buscar {
+        width: 240px;
+        background: #FFFFFF;
+    }
+
+    .inicio__buscar__texto {
+        background: #FFFFFF
+    }
+
+    .inicio__buscar__texto::placeholder {
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .inicio__buscar {
+        width: 240px;
+        background: #FFFFFF;
+    }
+    .inicio__buscar__texto{
+        background: #FFFFFF
+    }
+    .inicio__buscar__texto::placeholder {
+       color: #FFFFFF;
+    }
+}

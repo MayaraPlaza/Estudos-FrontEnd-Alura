@@ -1,0 +1,59 @@
+.login{
+    background: #E5E5E5;
+    padding: 80px 0;
+}
+.login__card{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.logn__titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #464646;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login__text{
+    border-radius: 4px;
+    width: 423px;
+    height: 63.13px;
+    border: none;
+    outline: none;
+}
+
+.login__text::placeholder{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A2A2A2;
+}
+.login__boton{
+    padding: 20px 16px;
+    background: #2A7AE4;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.login__boton:hover {
+    background: #1e6cd1;
+}
+
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .login__text{
+        border-radius: 4px;
+        width: 223px;
+        height: 63.13px;
+        border: none;
+        outline: none;
+    }
+}

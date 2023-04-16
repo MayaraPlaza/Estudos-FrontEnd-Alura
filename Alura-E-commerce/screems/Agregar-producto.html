@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/header/styles.css">
+    <link rel="stylesheet" href="../assets/css/header/header.css">
+    <link rel="stylesheet" href="../assets/css/header/promocion.css">
+    <link rel="stylesheet" href="../assets/css/footer/contacto.css">
+    <link rel="stylesheet" href="../assets/css/main/productos.css">
+    <link rel="stylesheet" href="../assets/css/main/agregar.css">
+    <link rel="stylesheet" href="../assets/css/main/lista-productos.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="shortcut icon" href="../assets/img/LogoPagek.png">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header>
+        <section class="cabecera">
+            <div class="cabecera__inicio">
+                <div class="inicio__logo"></div>
+                <div class="inicio__buscar">
+                    <input type="text" class="inicio__buscar__texto" placeholder="¿Que deseas buscar?">
+                    <a href="" class="inicio__boton"><i class="icon-buscar inicio__icono"></i></i></a>
+                </div>
+            </div>
+            <a href="menu-admin.html"><button class="cabecera__login">Menu Administrador</button></a>
+        </section>
+    </header>
+    <main>
+        <section class="agregar">
+            <div class="agregar__producto">
+                <h1 class="agregar__titulo">Agregar nuevo Producto</h1>
+                <form action="menu-admin.html" class="formulario">
+                    <label for="">Imagen del producto</label>
+                    <div class="formulario__agregar">
+                        <div class="imagen__antes" data-imagen id="imagen"> </div>
+                        <input type="file" class="agregar__imagen" id="file" data-file>
+                    </div>
+                    <label for="">Categoria</label>
+                    <select name="" id="" class="agregar__categoria agregar__text" data-form-categoria>
+                    </select>
+                    <label for="">Titulo del producto</label>
+                    <input type="text" class="agregar__text" data-form-titulo>
+                    <label for="">Precio</label>
+                    <input type="text" class="agregar__text" data-form-precio>
+                    <label for="">Descripcion</label>
+                    <textarea cols="10" rows="3" class="agregar__text" data-form-descripcion></textarea>
+                    <input type="submit" value="Agregar producto" class="agregar__boton" id="agrega" data-form-boton>
+               
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="contacto">
+            <div class="contacto__logo"></div>
+            <div class="contacto__info">
+                <a href="" class="contacto__link">Quienes somos nosotros</a>
+                <a href="" class="contacto__link">Politica de privacidad</a>
+                <a href="" class="contacto__link">Programa de fidelidad</a>
+                <a href="" class="contacto__link">Nuestras tiendas</a>
+                <a href="" class="contacto__link">Quiero ser franquiciado</a>
+                <a href="" class="contacto__link">Anuncie aqui</a>
+            </div>
+            <div class="contacto__form">
+                <h1 class="form__titulo">Hable con nosotros</h1>
+                <form action="" class="form_form">
+                    <input type="text" class="form__text" placeholder="Nombre" autocomplete="off">
+                    <input type="text" class="form__text" placeholder="Mensaje" autocomplete="off">
+                    <input type="submit" value="Enviar mensaje" class="form__boton">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../JS/agregar.js" type="module"></script>
+</body>
+</html>

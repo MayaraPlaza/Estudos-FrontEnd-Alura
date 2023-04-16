@@ -1,0 +1,14 @@
+.todos_productos{
+    background: #f5f5f5;
+}
+.todos__info{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.todos__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

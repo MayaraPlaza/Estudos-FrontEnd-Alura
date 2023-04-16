@@ -1,0 +1,20 @@
+.similares{
+    background: #f5f5f5;
+    padding: 40px 0;
+}
+.similares__info{
+    width: 80%;
+    margin: 0 auto;
+}
+.similares__encabezado{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+}
+.lista__similares{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

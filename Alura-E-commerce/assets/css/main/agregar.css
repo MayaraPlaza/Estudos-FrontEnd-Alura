@@ -1,0 +1,88 @@
+.agregar{
+    background: #f5f5f5;
+    padding: 40px 0;
+}
+.agregar__producto{
+    width: 40%;
+    margin: 0 auto;
+}
+.agregar__titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+    padding-bottom: 20px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.imagen__antes{
+    margin: 20px 0;
+    width: 50%;
+    height: 200px;
+    background: url("../../img/esperando.png") no-repeat center / cover;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.formulario__agregar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+}
+.agregar__text{
+    width: auto;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.3) ;
+    outline: none;
+    margin-bottom: 20px;
+}
+.agregar__text:nth-child(10){
+    height: 86px;
+    resize: none;
+}
+.agregar__boton{
+    color: #ffffff;
+    padding: 16px;
+    background: #2A7AE4;
+    cursor: pointer;
+    border: none;
+}
+
+.agregar__boton:hover{
+    background: #1e6cd1;
+}
+
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .agregar__producto{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .imagen__antes {
+        width: 80%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .agregar__producto{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .imagen__antes {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .agregar__producto{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .imagen__antes {
+        width: 50%;
+    }
+}

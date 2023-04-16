@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="screen">
+        <input type="text" id="result" value="0" disabled>
+      </div>
+      <div class="buttons">
+        <button onclick="updateResult('7')">7</button>
+        <button onclick="updateResult('8')">8</button>
+        <button onclick="updateResult('9')">9</button>
+        <button onclick="updateResult('+')">+</button>
+        <button onclick="updateResult('4')">4</button>
+        <button onclick="updateResult('5')">5</button>
+        <button onclick="updateResult('6')">6</button>
+        <button onclick="updateResult('-')">-</button>
+        <button onclick="updateResult('1')">1</button>
+        <button onclick="updateResult('2')">2</button>
+        <button onclick="updateResult('3')">3</button>
+        <button onclick="updateResult('*')">*</button>
+        <button onclick="updateResult('0')">0</button>
+        <button onclick="updateResult('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="updateResult('/')">/</button>
+        <button onclick="clearResult()">C</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

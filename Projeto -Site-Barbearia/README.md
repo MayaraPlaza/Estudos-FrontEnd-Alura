@@ -1,7 +1,7 @@
 # LadingPageBarbearia
 Lading Page Barbearia - Criada durante curso da Alura
 
-- Para ver o Projeto completo <a href="https://mayaraplaza.github.io/Site-Barbearia/">clique aqui</a>
+- Para ver o Projeto completo <a href="https://mayaraplaza.github.io/Estudos-FrontEnd-Alura/Projeto%20-Site-Barbearia/">clique aqui</a>
 
 A página inicial do site é muito atraente, pois apresenta uma breve descrição da barbearia, informações sobre o endereço e um mapa para ajudar os clientes a encontrar facilmente o estabelecimento. Além disso, há uma seção destacada com os benefícios que a barbearia oferece, o que é ótimo para chamar a atenção dos visitantes do site.
 

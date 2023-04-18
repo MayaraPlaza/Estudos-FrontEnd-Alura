@@ -1,6 +1,8 @@
 
 # Cantina Sass
 
+Para visualizar e navegar no projeto <a href="https://mayaraplaza.github.io/Estudos-FrontEnd-Alura/CantinaSass/"> clique aqui</a>
+
 Durante estudos da ferramenta Sass, decidi refatorar uma
 pagina que tinha estudado tempos atrás, não foi pensado em ser responsiva, a ideia era transformar css puro em SASS.
 
@@ -25,3 +27,4 @@ Pontos que me chamaram a atenção e que vão me fazer usar essa ferramenta outr
 
 
 
+![image](https://user-images.githubusercontent.com/74818185/232796448-165b34f7-ad05-4350-bb8f-dfe8218d6ea1.png)

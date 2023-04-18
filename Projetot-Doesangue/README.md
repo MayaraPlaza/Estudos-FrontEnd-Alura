@@ -1,4 +1,7 @@
 # Doesangue 🩸
+
+Para visualizar e navegar no projeto <a href="https://mayaraplaza.github.io/Estudos-FrontEnd-Alura/Projetot-Doesangue/"> clique aqui </a>
+
 <h2>Desenvolvido durante a maratonadev @rocketseat🚀</h2><br>
 Aplicação que ajuda no incentivo a doação de sangue.<br>
 OMS diz que doação de sangue é fundamental para fortalecer resposta ao COVID-19.

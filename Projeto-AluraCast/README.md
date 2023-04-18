@@ -1,9 +1,7 @@
-<p align="center"> <img src="https://user-images.githubusercontent.com/76708357/182975297-83940d2b-12cd-4df2-a864-dc1e2dd33d9e.png" alt="CSS: Layouts com Grid"> </p>
-
-<hr>
 
 <h1>AluraCast</h1>
 <p align="start">Uma página estática inspirada em uma plataforma de streamming de músicas e podcasts.</p>
+Para visualizar e navegar no projeto <a href="https://mayaraplaza.github.io/Estudos-FrontEnd-Alura/Projeto-AluraCast/"> clique aqui </a>
 
 ## Tecnologias
 * HTML

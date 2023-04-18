@@ -2,12 +2,7 @@
 
 Site de uma livraria com livros separados por categorias, livros disponíveis e por ordem de preço.
 
-| :placard: Vitrine.Dev |     |
-| -------------  | --- |
-| :sparkles: Nome        | **AluraBooks**
-| :label: Tecnologias | HTML, CSS e JavaScript
-| :rocket: URL         | https://alura-books-9wea.vercel.app/
-| :fire: Desafio     | -
+Para visualizar o projeto e navegar <a href="https://mayaraplaza.github.io/Estudos-FrontEnd-Alura/AluraBooks/"> clique aqui </a>
 
 ## Detalhes do projeto
 
